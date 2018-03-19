@@ -1,3 +1,5 @@
+/* vim: set expandtab ts=2 sw=2 ft=cpp: */
+
 #include <stdio.h>
 #include "palindrome.h"
 
@@ -18,8 +20,7 @@ int check(char* str, int expected) {
   
   // if our function did not return the expected value, report an error
   if (expected != actual) {
-    printf("FAILED: %s reported as %sa palindrome\n", str,
-	   actual ? "" : "not ");
+    printf("FAILED: %s reported as %sa palindrome\n", str, actual ? "" : "not ");
     return FAIL; // return error code
   }
   else {

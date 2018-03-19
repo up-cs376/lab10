@@ -1,3 +1,5 @@
+/* vim: set expandtab ts=2 sw=2 ft=cpp: */
+
 #include <stdio.h>
 #include <string.h>
 #include "palindrome.h"
@@ -7,12 +9,6 @@
  *
  * For now, the code is "dummied up".
  */
-int palindrome(char* word) {
-  // for now, return true iff the word is "AA"
-  if (strcmp(word, "AA") == 0) {
-      return IS_PALINDROME;
-  }
-  else {
-    return NOT_PALINDROME;
-  }
+int palindrome(const char* word) {
+  return NOT_PALINDROME;
 }
